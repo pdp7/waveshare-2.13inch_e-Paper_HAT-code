@@ -28,13 +28,19 @@
 #ifndef EPDIF_H
 #define EPDIF_H
 
-#include <arduino.h>
+#include <Arduino.h>
 
 // Pin definition
-#define RST_PIN         8
-#define DC_PIN          9
-#define CS_PIN          10
-#define BUSY_PIN        7
+//#define RST_PIN         8
+//#define DC_PIN          9
+//#define CS_PIN          10
+//#define BUSY_PIN        7
+
+#define RST_PIN         27 
+#define DC_PIN          5   
+#define CS_PIN          4
+#define BUSY_PIN        17
+
 
 class EpdIf {
 public:
