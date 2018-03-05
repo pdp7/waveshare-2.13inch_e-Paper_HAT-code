@@ -24,10 +24,14 @@
  * THE SOFTWARE.
  */
 
+#include <WiFi.h>
 #include <SPI.h>
-#include "epd2in13b.h"
+#include <Wire.h>
+#include "epd2in13b.h"    //Only for the 2.13" Screen!
+//#include "epd2in9.h"    //Only for the 2.13" Screen!
 #include "imagedata.h"
 #include "epdpaint.h"
+//#include "ClosedCube_HDC1080.h"
 
 #define COLORED     0
 #define UNCOLORED   1
@@ -40,7 +44,7 @@ void setup() {
   if (epd.Init() != 0) {
     Serial.print("e-Paper init failed");
     return;
-  }
+  } 
 
   /* This clears the SRAM of the e-paper display */
   epd.ClearFrame();

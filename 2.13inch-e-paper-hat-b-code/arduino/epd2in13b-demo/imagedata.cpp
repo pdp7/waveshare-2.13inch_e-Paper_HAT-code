@@ -24,7 +24,7 @@
  */
 
 #include "imagedata.h"
-#include <avr/pgmspace.h>
+#include <pgmspace.h>
 
 const unsigned char IMAGE_BLACK[] PROGMEM = { /* 0X00,0X01,0X68,0X00,0XD4,0X00, */
 0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
